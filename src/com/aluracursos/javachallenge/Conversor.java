@@ -123,25 +123,4 @@ public class Conversor {
         }
     }
 
-    // registra en archivo las conversiones realizadas
-    public void guardarConsulta(ConversionExchangeRateApi nuevaConsulta){
-        System.out.println("registraando consulta: ");
-        System.out.println(nuevaConsulta);
-
-        try {
-            FileWriter archivo = new FileWriter("registro.json",true);
-            //archivo.write(nuevaConsulta.toString());
-            archivo.close();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        } finally {
-
-        }
-    }
-
-    // muestra desde el archivo las conversiones realizadas
-    public void mostrarRegistro(){
-
-    }
-
 }

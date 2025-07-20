@@ -87,7 +87,6 @@ public class ConversorApp {
                                 );
 
                         System.out.println(mensaje);
-                        miConversor.guardarConsulta(datosExRateApi);
                     } else {
                         System.out.println("Error en la solicitud: " + datosExRateApi.errorType());
                     }
